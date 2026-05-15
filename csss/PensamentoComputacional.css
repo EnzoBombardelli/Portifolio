@@ -1,0 +1,55 @@
+h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pensamentocomputacional {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 500px;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aula1 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.aula1:hover {
+    background-color: white;
+    color: black;
+}

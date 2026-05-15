@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Enzo Bombardelli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/csss/style.css">
+    <link rel="stylesheet" href="/csss/inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav-esquerda"> 
-            <a href="index.html" class="navbtn">Início</a>
+    <header class="navbar">
+        <nav> 
+            <a href="index.html" class="navbtn pagina-ativa">Início</a>
             <a href="index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="index.html#footer" class="navbtn contato-bold">Contatos</a>
+            <a href="index.html#rodape-container" class="navbtn">Contatos</a>
             <a href="LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
             <a href="PensamentoComputacional.html" class="navbtn">Pensamento Computacional</a>
         </nav>
-
-        <nav class="nav-direita"> 
-             <p>+55 43 9964-5917</p>
-        </nav>
+        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
         <section id="sobremim">
-            <h1>ENZO BOMBARDELLI</h1>
-            <h2>Engenharia de Software</h2>
-            <a href="index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="index.html#footer" class="navbtn contato-bold">Contatos</a>
+            <h2>ENZO</h2>
+            <h1>BOMBARDELLI</h1>
+            <h3>Engenheiro de Software</h3>
+            <div class="button-container">
+                <a href="index.html#SobreMim" class="btn-outline">Sobre Mim</a>
+                <a href="index.html#rodape-container" class="btn-outline">Contatos</a>
+            </div>
         </section>
 
         <section id="SobreMim">
-            <h1>Sobre Mim</h1>
+            <h2>Sobre Mim</h2>
 
             <!--Acrescentar mais informações-->
             <p>Olá! Eu sou Enzo Bombardelli, faço engenharia de software na UniFil - Centro Universidade Filadelfia, em Londrina-PR. Atualmente estou no primeiro semestre, do primeiro ano.</p>
-
+<br><br><br><br><br><br><br></br><br><br></br></br></br></br></br></br></br></br><br>
         </section>
     </main>
-    <footer>    
-        <nav id="footer">
-
-                <!--Organizar em ordem-->
-                <button> <a href="https://www.instagram.com/enzo.bombardelli/" target="_blank" > <i class="fa-brands fa-instagram"></i> Instagram</a> </button>
-                <button> <a href="https://github.com/EnzoBombardelli" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a> </button>
-                <button> <a href="https://www.linkedin.com/in/enzo-bombardelli-9894263b4/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a> </button>
-                <button> <a href="https://wa.me/5543996465917" target="_blank"> <i class="fa-brands fa-whatsapp"></i> WhatsApp</a> </button>
-                <button> <a href="mailto:enzobombardellies@gmail.com" target="_blank"> <i class="fa-regular fa-envelope"></i> Email</a> </button>
-
-                <p class="copyright">© 2026 Enzo Bombardelli.</p>
-        </nav>
+    <footer id="rodape-container">    
+        <div class="icones-sociais">
+                <a href="https://www.instagram.com/enzo.bombardelli/" target="_blank" > <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/enzo-bombardelli-9894263b4/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/EnzoBombardelli" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/5543996465917" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:enzobombardellies@gmail.com" target="_blank"> <i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2026 Enzo Bombardelli.</p>
     </footer>
 </body>
 </html>
