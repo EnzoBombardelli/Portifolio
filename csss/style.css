@@ -5,28 +5,27 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: white;
+    display: flex;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
-    color: white;
+    font-weight: weight;
+    justify-content: space-between;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .navbtn {
-    text-decoration: none;
     color: white;
-    padding: 10px;
+    text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
+    font-weight: weight;
+    padding: 10px;
 }
 
 .pagina-ativa {
@@ -37,15 +36,15 @@ body {
 
 footer a {
     color: white;
-    text-decoration: none;
     padding: 2px;
+    text-decoration: none;
 }
 
 #rodape-container {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
     gap: 20px;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
@@ -57,9 +56,9 @@ footer a {
 
 .copyright {
     color: white;
-    padding: 10px 20px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
+    font-weight: weight;
+    padding: 10px 20px;
 }

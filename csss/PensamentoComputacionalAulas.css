@@ -14,7 +14,23 @@ h1 {
     box-sizing: border-box;
 }
 
-.londrinensetech {
+h2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -30,12 +46,7 @@ h1 {
     box-sizing: border-box;
 }
 
-.aulas {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 30px;
-    margin-left: 50px;
-    background-color: transparent;
+.pensamentocomputacionalaulas {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -43,13 +54,31 @@ h1 {
     font-style: normal;
     font-size: 20px;
     line-height: 1.5;
-    text-decoration: none;
-    border: 2px solid white;
-    border-radius: 18px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.aulas:hover {
-    background-color: white;
-    color: black;
+.PCAula2 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.layout-aulas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
 }
