@@ -1,3 +1,17 @@
+.botao-voltar {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 8px 12px;
+    background-color: rgb(17, 14, 20);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+}
+
 h1 {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -62,6 +76,102 @@ h3 {
     box-sizing: border-box;
 }
 
+.layout-aula1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+
+.layout-aula2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 131px;
+}
+
+.layout-aula3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula7 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula8 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+
+.layout-aula9 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.layout-aula10 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+
+.PCAula1 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
 .PCAula2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,11 +184,98 @@ h3 {
     width: 400px;
 }
 
-.layout-aulas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 191px;
+.PCAula3 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula4 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula5 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula6 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula7 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula8 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula9 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.PCAula10 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
 }

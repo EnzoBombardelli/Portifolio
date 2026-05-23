@@ -31,22 +31,24 @@ h1 {
 }
 
 .aulas {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 30px;
-    margin-left: 50px;
     background-color: transparent;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.5;
-    text-decoration: none;
     border: 2px solid white;
     border-radius: 18px;
     box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: weight;
+    padding: 0px 190px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 530px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    text-decoration: none;
 }
 
 .aulas:hover {

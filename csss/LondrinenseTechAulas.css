@@ -1,3 +1,25 @@
+.botao-voltar {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 8px 12px;
+    background-color: rgb(17, 14, 20);
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: white;
+    color: black;
+}
+
 h1 {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -6,7 +28,7 @@ h1 {
     font-style: normal;
     font-size: 70px;
     line-height: 1;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 50px;
     margin-right: 0;
     margin-bottom: 0;
@@ -22,7 +44,7 @@ h2 {
     font-style: normal;
     font-size: 30px;
     line-height: 1;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 50px;
     margin-right: 0;
     margin-bottom: 0;
@@ -38,7 +60,7 @@ h3 {
     font-style: normal;
     font-size: 20px;
     line-height: 1.5;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 50px;
     margin-right: 500px;
     margin-bottom: 0;
@@ -54,9 +76,9 @@ h3 {
     font-style: normal;
     font-size: 20px;
     line-height: 1.5;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 50px;
-    margin-right: 500px;
+    margin-right: 0px;
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,10 +86,20 @@ h3 {
 
 .LTAula11 {
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    height: 200px;
-    margin: 30px auto;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 410px;
     object-fit: cover;
-    width: 200px;
+    width: 410px;
+}
+
+.layout-aulas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 159px;
 }
