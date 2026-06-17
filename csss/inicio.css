@@ -116,15 +116,7 @@ h3 {
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 500px;
-    margin-bottom: 0;
+    margin-bottom: 200px;
     padding: 0;
     box-sizing: border-box;
-}
-
-p {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
 }

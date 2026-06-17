@@ -32,10 +32,8 @@
     </header>
     <main>
 
-        <button class="botao-voltar" onclick="history.back()">
-            <span class="material-symbols-outlined">
-                arrow_back
-            </span>
+        <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
+            <span class="material-symbols-outlined">arrow_back</span>
         </button>
         
         <h1>Pensamento Computacional</h1>
@@ -44,7 +42,17 @@
             <div class="texto-layout-aulas">
                 <h2>Aula 1 - Turma A: Apresentação e Avaliação</h2>
                 <h3 style="margin-right: 0px;">(Terça-feira, 12/05/2026 | 14h15 às 16h00)</h3>
-                <p class="pensamentocomputacionalaulas">   Nessa primeira aula, do dia 12 de maio, foi realizada a primeira aula do projeto Pensamento Computacional, logo após os alunos se organizarem, o instrutor Victor Andrade se apresentou e apresentou os outros instrutores, depois disso ele apresentou o curso já que a maioria dos alunos eram novos, contou sobre os futuros assuntos e também sobre as normas da casa. No meio disso, a professora Tania Camila se apresentou e comentou sobre outros assuntos do curso e da UniFil em geral. Como era a aula inaugural, foi realizada uma prova para diferenciar os níveis de conhecimentos dos alunos, separando-os em básico, intermediário e avançado. Aproveitando o tempo de sobra, já que todos os alunos terminaram a prova antes do final da aula, o instrutor passou um kahoot para todos fazerem, sendo assim, após o fim do kahoot se encerrou o primeiro dia de aula do Pensamento Computacional.</p>
+                <p class="pensamentocomputacionalaulas">
+                    Nessa primeira aula, do dia 12 de maio, foi realizada a primeira aula do projeto Pensamento Computacional, 
+                    logo após os alunos se organizarem, o instrutor Victor Andrade se apresentou e apresentou os outros 
+                    instrutores, depois disso ele apresentou o curso já que a maioria dos alunos eram novos, contou sobre os 
+                    futuros assuntos e também sobre as normas da casa. No meio disso, a professora Tania Camila se apresentou e 
+                    comentou sobre outros assuntos do curso e da UniFil em geral. Como era a aula inaugural, foi realizada uma 
+                    prova para diferenciar os níveis de conhecimentos dos alunos, separando-os em básico, intermediário e avançado. 
+                    Aproveitando o tempo de sobra, já que todos os alunos terminaram a prova antes do final da aula, o instrutor 
+                    passou um kahoot para todos fazerem, sendo assim, após o fim do kahoot se encerrou o primeiro dia de aula do 
+                    Pensamento Computacional.
+                </p>
             </div>
             <div class="imagem-layout-aulas">
                 <img src="../imagens/PCAula1.jpeg" alt="Imagem da aula 1 do Pensamento Computacional" class="PCAula1">

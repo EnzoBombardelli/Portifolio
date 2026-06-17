@@ -1,6 +1,7 @@
+/*Geral*/
 .botao-voltar {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 0px;
     margin-bottom: 0px;
     padding: 8px 12px;
@@ -10,6 +11,7 @@
     cursor: pointer;
     display: flex;
     gap: 8px;
+    border: none;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
     font-style: normal;
     font-size: 70px;
     line-height: 1;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 50px;
     margin-right: 0;
     margin-bottom: 0;
@@ -50,7 +52,7 @@ h3 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5;
     margin-top: 20px;
     margin-left: 50px;
@@ -66,7 +68,7 @@ h3 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
     margin-top: 20px;
     margin-left: 50px;
@@ -76,73 +78,178 @@ h3 {
     box-sizing: border-box;
 }
 
+/*Aula 1*/
 .layout-aula1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 80px;
+}
+.PCAula1 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 489px;
+    object-fit: cover;
+    width: 400px;
 }
 
+/*Aula 2*/
 .layout-aula2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 131px;
+    margin-bottom: 113px;
+}
+.PCAula2 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 456px;
+    object-fit: cover;
+    width: 400px;
 }
 
+/*Aula 3*/
 .layout-aula3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 47px;
 }
+.PCAula3a {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 243px;
+    object-fit: cover;
+    width: 400px;
+}
+.PCAula3b {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 243px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 4*/
 .layout-aula4 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 169px;
 }
+.PCAula4 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 5*/
 .layout-aula5 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 146px;
 }
+.PCAula5 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 423px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 6*/
 .layout-aula6 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 146px;
 }
+.PCAula6 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 423px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 7*/
 .layout-aula7 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 169px;
 }
+.PCAula7 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 8*/
 .layout-aula8 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 169px;
+}
+.PCAula8 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
 }
 
+/*Aula 9*/
 .layout-aula9 {
     display: flex;
     flex-direction: row;
@@ -151,6 +258,18 @@ h3 {
     padding: 0;
     margin-bottom: 191px;
 }
+.PCAula9 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 10*/
 .layout-aula10 {
     display: flex;
     flex-direction: row;
@@ -159,121 +278,23 @@ h3 {
     padding: 0;
     margin-bottom: 191px;
 }
-
-.PCAula1 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula2 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula3 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula4 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula5 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula6 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula7 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula8 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
-.PCAula9 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    height: 400px;
-    object-fit: cover;
-    width: 400px;
-}
-
 .PCAula10 {
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula EM BREVE*/
+.AulaEMBREVE {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
     margin-bottom: 0px;
     height: 400px;
     object-fit: cover;

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pensamento Computacional - Aula 5</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../csss/style.css">
-    <link rel="stylesheet" href="../csss/PensamentoComputacionalAulas.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Pensamento Computacional - Aula 5</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <link rel="stylesheet" href="../csss/style.css">
+            <link rel="stylesheet" href="../csss/PensamentoComputacionalAulas.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+
 </head>
 <body>
     <header class="navbar">
@@ -23,20 +26,29 @@
         <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-        <button class="botao-voltar" onclick="history.back()">
-            &larr; Voltar
+
+        <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
+            <span class="material-symbols-outlined">arrow_back</span>
         </button>
         
         <h1>Pensamento Computacional</h1>
 
         <div class="layout-aula5">
             <div class="texto-layout-aulas">
-                <h2>Aula 5 - Turma A: EM BREVE.</h2>
-                <h3 style="margin-right: 0px;">(Terça-feira, 16/06/2026 | 14h15 às 16h00)</h3>
-                <p class="pensamentocomputacionalaulas">EM BREVE!</p>
+                <h2>Aula 5 - Turma A: Aprofundando em HTML</h2>
+                <h3 style="margin-right: 0px;">(Terça-feira, 09/06/2026 | 14h15 às 16h00)</h3>
+                <p class="pensamentocomputacionalaulas">
+                    Nessa aula do dia 09 de junho, o instrutor Victor aprofundou os conceitos de HTML e estruturação semântica, 
+                    explorando elementos mais avançados e técnicas de estruturação de páginas web. Com o objetivo de reforçar os 
+                    aprendizados, os alunos foram desafiados a desenvolver um projeto prático: uma página no estilo "Sobre Mim", 
+                    funcionando como um portfólio pessoal básico. A atividade exigia a aplicação obrigatória de tags estruturais 
+                    e de conteúdo essenciais, como &lt;h1&gt; para o título principal, &lt;p&gt; para a biografia, &lt;img&gt; 
+                    para a inserção de imagens e as listas &lt;ol&gt; e &lt;ul&gt; para organizar habilidades ou trajetórias, 
+                    permitindo que a turma transformasse a teoria em código e compreendesse a arquitetura de um site na prática.
+                </p>
             </div>
             <div class="imagem-layout-aulas">
-                <img src="../imagens/PCAula5.jpeg" alt="Imagem da aula 5 do Pensamento Computacional" class="PCAula5">
+                <img src="../imagens/PCAula5.jpg" alt="Imagem da aula 5 do Pensamento Computacional" class="PCAula5">
             </div>
         </div>
     </main>

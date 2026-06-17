@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pensamento Computacional - Aula 2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../csss/style.css">
-    <link rel="stylesheet" href="../csss/PensamentoComputacionalAulas.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Pensamento Computacional - Aula 2</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <link rel="stylesheet" href="../csss/style.css">
+            <link rel="stylesheet" href="../csss/PensamentoComputacionalAulas.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+
 </head>
 <body>
     <header class="navbar">
@@ -26,17 +29,25 @@
     </header>
     <main>
 
-        <button class="botao-voltar" onclick="history.back()">
-            &larr; Voltar
+        <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
+            <span class="material-symbols-outlined">arrow_back</span>
         </button>
-        
+            
         <h1>Pensamento Computacional</h1>
 
         <div class="layout-aula2">
             <div class="texto-layout-aulas">
-                <h2>Aula 2 - Turma A: Introdução aos computadores.</h2>
+                <h2>Aula 2 - Turma A: Introdução aos computadores</h2>
                 <h3 style="margin-right: 0px;"> (Terça-feira, 19/05/2026 | 14h15 às 16h00)</h3>
-                <p class="pensamentocomputacionalaulas">   Nessa aula, do dia 19 de maio, foi realizado uma aula mais puxada a introdução a computação, onde foi comentado sobre assuntos como os primeiros computadores, como o ENIAC e mais alguns computadores analógicos, foi explicado a diferença entre computadores analógicos e computadores digitais, também foi mostrado e explicado os detalhes da peça mais avançada dos computadores, que é o processador, um componente com detalhes microscópicos. Por conta de ter vários alunos novos em relação a última aula, esses alunos foram para outra sala realizar a prova para diferenciar os níveis. Após a prova os alunos retornaram a sala e assistiram o resto da aula. No fim da aula tiramos uma foto com a turma toda e assim se encerrou a segunda aula do Pensamento Computacional.</p>
+                <p class="pensamentocomputacionalaulas">
+                    Nessa aula, do dia 19 de maio, foi realizado uma aula mais puxada a introdução a computação, onde foi comentado
+                    sobre assuntos como os primeiros computadores, como o ENIAC e mais alguns computadores analógicos, foi explicado
+                    a diferença entre computadores analógicos e computadores digitais, também foi mostrado e explicado os detalhes 
+                    da peça mais avançada dos computadores, que é o processador, um componente com detalhes microscópicos. Por conta 
+                    de ter vários alunos novos em relação a última aula, esses alunos foram para outra sala realizar a prova para 
+                    diferenciar os níveis. Após a prova os alunos retornaram a sala e assistiram o resto da aula. No fim da aula 
+                    tiramos uma foto com a turma toda e assim se encerrou a segunda aula do Pensamento Computacional.
+                    </p>
             </div>
             <div class="imagem-layout-aulas">
                 <img src="../imagens/PCAula2.jpeg" alt="Imagem da aula 2 do Pensamento Computacional" class="PCAula2">
