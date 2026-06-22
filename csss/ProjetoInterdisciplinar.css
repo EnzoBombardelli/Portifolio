@@ -30,8 +30,13 @@ h1 {
     box-sizing: border-box;
 }
 
-h3 {
-    font-size: larger;
+h2 {
+    font-size: 23px;
+    margin: 0px;
+    color: white;
+}
+
+h5 {
     margin: 0px;
     color: white;
 }
@@ -48,7 +53,7 @@ p {
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
-    height: 2200px;
+    height: 2400px;
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 00px;
@@ -66,4 +71,3 @@ p {
     background-color: rgb(17, 14, 20);
     box-shadow: 3px 3px 8px white;
 }
-
