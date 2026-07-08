@@ -256,7 +256,7 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 191px;
+    margin-bottom: 80px;
 }
 .PCAula9 {
     border-radius: 10px;
@@ -264,7 +264,7 @@ h3 {
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 0px;
-    height: 400px;
+    height: 489px;
     object-fit: cover;
     width: 400px;
 }
@@ -289,8 +289,76 @@ h3 {
     width: 400px;
 }
 
-/*Aula EM BREVE*/
-.AulaEMBREVE {
+/*Aula 11*/
+.layout-aula11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 113px;
+}
+.PCAula11 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 456px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 12*/
+.layout-aula12 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.PCAula12 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 13*/
+.layout-aula13 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.PCAula13 {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+/*Aula 14*/
+.layout-aula14 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 191px;
+}
+.PCAula14 {
     border-radius: 10px;
     margin-top: 30px;
     margin-left: 80px;

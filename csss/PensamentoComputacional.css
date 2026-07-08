@@ -24,7 +24,7 @@ h1 {
     line-height: 1.5;
     margin-top: 20px;
     margin-left: 50px;
-    margin-right: 500px;
+    margin-right: 50px;
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,8 +51,11 @@ h1 {
     margin-left: 50px;
     margin-right: 0px;
     margin-bottom: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
     line-height: 1.5;
     text-decoration: none;
+    width: 670px;
 }
 
 .aulas:hover {
