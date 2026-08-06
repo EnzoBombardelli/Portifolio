@@ -68,3 +68,24 @@ footer a {
     font-weight: weight;
     padding: 10px 20px;
 }
+/* ========================================
+   RESPONSIVO - Celular (até 600px)
+   ======================================== */
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .navbtn {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    #rodape-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
