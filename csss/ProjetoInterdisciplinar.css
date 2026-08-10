@@ -71,9 +71,7 @@ p {
     background-color: rgb(17, 14, 20);
     box-shadow: 3px 3px 8px white;
 }
-/* ========================================
-   RESPONSIVO - Tablet (até 1024px)
-   ======================================== */
+
 @media (max-width: 1024px) {
     h1 {
         font-size: 48px;
@@ -95,9 +93,6 @@ p {
     }
 }
 
-/* ========================================
-   RESPONSIVO - Celular (até 600px)
-   ======================================== */
 @media (max-width: 600px) {
     h1 {
         font-size: 32px;
