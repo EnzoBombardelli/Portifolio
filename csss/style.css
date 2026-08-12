@@ -15,7 +15,7 @@ body {
     display: flex;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-style: normal;
     font-weight: bold;
     justify-content: space-between;

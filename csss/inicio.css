@@ -23,7 +23,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 1;
     margin-bottom: 0;
     margin: 0;
@@ -36,7 +36,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-size: 70px;
+    font-size: 4.375rem;
     line-height: 1;
     margin-top: 0;
     margin-left: 3px;
@@ -52,8 +52,8 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 300px;
     font-style: normal;
-    font-size: 20px;
-    letter-spacing: 15px;
+    font-size: 1.25rem;
+    letter-spacing: 0.9375rem;
     line-height: 1;
     margin-top: 0;
     margin-left: 4.5px;
@@ -111,7 +111,7 @@ h3 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.5;
     margin-top: 20px;
     margin-left: 50px;
