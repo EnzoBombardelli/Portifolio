@@ -116,13 +116,59 @@ h3 {
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 500px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+#LinguagensFerramentas {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 500px;
+    margin-bottom: 100px;
     padding: 0;
     box-sizing: border-box;
 }
-/* ========================================
-   RESPONSIVO - Tablet (até 1024px)
-   ======================================== */
+
+.Linguagens{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.linguagens {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  padding: 10px 15px;
+  border: #222  1px solid;
+  border-radius: 5px;
+}
+
+.Ferramentas{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.ferramentas {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  padding: 10px 15px;
+  border: #222  1px solid;
+  border-radius: 5px;
+}
+
 @media (max-width: 1024px) {
     #sobremim {
         padding-left: 50px;
@@ -161,9 +207,6 @@ h3 {
     }
 }
 
-/* ========================================
-   RESPONSIVO - Celular (até 600px)
-   ======================================== */
 @media (max-width: 600px) {
     #sobremim {
         padding-left: 20px;
