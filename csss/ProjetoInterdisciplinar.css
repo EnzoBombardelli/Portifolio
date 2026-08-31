@@ -6,8 +6,8 @@ h1 {
     font-style: normal;
     font-size: 4.375rem;
     line-height: 1;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 3.125rem;
+    margin-left: 3.125rem;
     margin-right: 0;
     margin-bottom: 0;
     padding: 0;
@@ -22,9 +22,9 @@ h1 {
     font-style: normal;
     font-size: 1.25rem;
     line-height: 1.5;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 500px;
+    margin-top: 1.25rem;
+    margin-left: 3.125rem;
+    margin-right: 31.25rem;
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,12 +32,12 @@ h1 {
 
 h2 {
     font-size: 1.4375rem;
-    margin: 0px;
+    margin: 0rem;
     color: white;
 }
 
 h5 {
-    margin: 0px;
+    margin: 0rem;
     color: white;
 }
 
@@ -53,40 +53,40 @@ p {
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
-    height: 2500px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 00px;
+    height: auto;
+    margin-top: 1.25rem;
+    margin-left: 3.125rem;
+    margin-right: 0rem;
     margin-bottom: 0;
     unicode-bidi: isolate;
-    width: 800px;
+    width: 50rem;
 }
 
 .box-materia {
     display: block;
-    padding: 25px;
+    padding: 1.5625rem;
     border: 3px solid white;
-    border-radius: 30px;
-    margin: 10px;
+    border-radius: 1.875rem;
+    margin: 0.625rem;
     background-color: rgb(17, 14, 20);
     box-shadow: 3px 3px 8px white;
 }
 
 @media (max-width: 1024px) {
     h1 {
-        font-size: 48px;
-        margin-left: 30px;
+        font-size: 3rem;
+        margin-left: 1.875rem;
     }
 
     .projetointerdisciplinar {
-        font-size: 18px;
-        margin-left: 30px;
-        margin-right: 30px;
+        font-size: 1.125rem;
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
     }
 
     .layout-materias {
         width: 90%;
-        max-width: 800px;
+        max-width: 50rem;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -95,14 +95,14 @@ p {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 32px;
-        margin-left: 20px;
+        font-size: 2rem;
+        margin-left: 1.25rem;
     }
 
     .projetointerdisciplinar {
-        font-size: 16px;
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
     }
 
     .layout-materias {
@@ -112,7 +112,7 @@ p {
     }
 
     .box-materia {
-        padding: 15px;
-        margin: 8px;
+        padding: 0.9375rem;
+        margin: 0.5rem;
     }
 }
