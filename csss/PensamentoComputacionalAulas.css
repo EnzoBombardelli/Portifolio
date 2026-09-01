@@ -449,6 +449,26 @@ h3 {
     width: 25rem;
 }
 
+/*Aula 19*/
+.layout-aula19 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 6.25rem;
+}
+.PCAula19 {
+    border-radius: 0.625rem;
+    margin-top: 1.875rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 0rem;
+    height: 28.125rem;
+    object-fit: cover;
+    width: 25rem;
+}
+
 @media (max-width: 1024px) {
     h1 {
         font-size: 2.75rem;
