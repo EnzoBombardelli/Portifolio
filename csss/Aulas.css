@@ -1,0 +1,186 @@
+.botao-voltar {
+    margin-top: 1.25rem;
+    margin-left: 2.5rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0.75rem;
+    background-color: rgb(17, 14, 20);
+    color: white;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+}
+
+/* ==========================================
+   2. TIPOGRAFIA E ELEMENTOS DE TEXTO
+   ========================================== */
+h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.londrinensetechaulas {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================
+   3. CONTAINER PRINCIPAL (FOTO REDUZIDA E TEXTO EXPANDIDO)
+   ========================================== */
+.parent {
+    display: grid;
+    /* Aumenta a proporção do texto (2.2fr) e define a foto proporcionalmente (1fr) */
+    grid-template-columns: 2.2fr 1fr;       
+    grid-template-rows: auto auto auto 1fr; 
+    gap: 1rem 2.5rem; /* Adiciona um espaçamento horizontal limpo (2.5rem) entre texto e foto */
+    height: auto;     /* Alterado de 80vh para auto para não esticar demais a página */
+    min-height: 80vh;
+    width: 100%;      /* Alterado de 100vw para 100% para evitar rolagem horizontal */
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+}
+
+/* --- Posicionamento dos Blocos no Grid --- */
+.div1 {
+    grid-column: 1 / -1;                  /* Título principal ocupa a largura total */
+}
+
+.div2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.div3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.div4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.div5 {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    max-height: 70vh;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* --- Estilização e Tamanho da Foto --- */
+.FotoAulas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.75rem;
+        margin-left: 1.875rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 1.875rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
+    }
+
+    .londrinensetechaulas {
+        font-size: 1.125rem;
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
+    }
+
+    [class^="layout-aula"] {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        margin: 1.875rem 0 !important;
+    }
+
+    .imagem-layout-aulas {
+        width: 80%;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    [class^="LTAula"] {
+        height: auto;
+    }
+
+    .botao-voltar {
+        margin-left: 1.875rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-left: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-left: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .londrinensetechaulas {
+        font-size: 1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .imagem-layout-aulas {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .botao-voltar {
+        margin-left: 1.25rem;
+    }
+}
