@@ -4,7 +4,7 @@
     margin-right: 0rem;
     margin-bottom: 0rem;
     padding: 0.5rem 0.75rem;
-    background-color: rgb(17, 14, 20);
+    background-color: rgb(15, 12, 18);
     color: white;
     font-size: 0.9375rem;
     cursor: pointer;
@@ -13,9 +13,6 @@
     border: none;
 }
 
-/* ==========================================
-   2. TIPOGRAFIA E ELEMENTOS DE TEXTO
-   ========================================== */
 h1 {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -51,27 +48,22 @@ h3 {
     margin: 0;
 }
 
-/* ==========================================
-   3. CONTAINER PRINCIPAL (FOTO REDUZIDA E TEXTO EXPANDIDO)
-   ========================================== */
 .parent {
     display: grid;
-    /* Aumenta a proporção do texto (2.2fr) e define a foto proporcionalmente (1fr) */
     grid-template-columns: 2.2fr 1fr;       
     grid-template-rows: auto auto auto 1fr; 
-    gap: 1rem 2.5rem; /* Adiciona um espaçamento horizontal limpo (2.5rem) entre texto e foto */
-    height: auto;     /* Alterado de 80vh para auto para não esticar demais a página */
+    gap: 1rem 2.5rem;
+    height: auto;
     min-height: 80vh;
-    width: 100%;      /* Alterado de 100vw para 100% para evitar rolagem horizontal */
+    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 1rem 3rem;
     box-sizing: border-box;
 }
 
-/* --- Posicionamento dos Blocos no Grid --- */
 .div1 {
-    grid-column: 1 / -1;                  /* Título principal ocupa a largura total */
+    grid-column: 1 / -1;
 }
 
 .div2 {
@@ -94,18 +86,47 @@ h3 {
     grid-row: 2 / span 3;
     display: flex;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     max-height: 70vh;
     overflow: hidden;
     border-radius: 12px;
 }
 
-/* --- Estilização e Tamanho da Foto --- */
 .FotoAulas {
     width: 100%;
     height: 100%;
     object-fit: cover;
 } 
+
+footer a {
+    color: white;
+    padding: 0.125rem;
+    text-decoration: none;
+}
+
+#rodape-container {
+    align-items: center;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    flex: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+.icones-sociais, .copyright {
+    display: flex;
+    gap: 0.3125rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; 
+    padding: 0.625rem 1.25rem;
+}
 
 @media (max-width: 1024px) {
     h1 {
@@ -130,7 +151,7 @@ h3 {
         margin-right: 1.875rem;
     }
 
-    [class^="layout-aula"] {
+    .layout-aula {
         flex-direction: column;
         align-items: center;
         gap: 1.25rem;
@@ -143,7 +164,7 @@ h3 {
         margin: 0 auto;
     }
 
-    [class^="LTAula"] {
+    .LTAula {
         height: auto;
     }
 

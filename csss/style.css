@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(17, 14, 20);
+    background-color: rgb(13, 10, 16);
     color: var(--texto-lilac);
     line-height: 1.6;
     display: flex;
@@ -18,7 +18,7 @@ body {
 
 .navbar {
     align-items: center;
-    background-color: rgb(17, 14, 20);
+    background-color: rgb(13, 10, 16);
     padding: 0.625rem 1.25rem; 
     color: white;
     display: flex;
@@ -47,35 +47,6 @@ body {
     font-weight: 700;
 }
 
-footer a {
-    color: white;
-    padding: 0.125rem; /* 2px -> 0.125rem */
-    text-decoration: none;
-}
-
-#rodape-container {
-    align-items: center;
-    display: flex;
-    gap: 1.25rem; /* 20px -> 1.25rem */
-    justify-content: space-between;
-    margin-top: 0.625rem; /* 10px -> 0.625rem */
-    flex: 1;        /* Trava o elemento em relação à janela do navegador */
-    bottom: 0;               /* Fixa na parte inferior */
-    left: 0;                 /* Ancorado na borda esquerda */
-    width: 100%;             /* Ocupa a largura inteira de qualquer tela */
-    height: 5rem;            /* Tamanho fixo e específico do rodapé */
-}
-
-.icones-sociais, .copyright {
-    display: flex;
-    gap: 0.3125rem; /* 5px -> 0.3125rem */
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400; 
-    padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
-}
-
-/* Transformamos os breakpoints de Media Queries em 'em' (600 / 16 = 37.5em). É uma boa prática global! */
 @media (max-width: 37.5em) {
     .navbar {
         flex-wrap: wrap;

@@ -68,8 +68,36 @@ p {
     border: 3px solid white;
     border-radius: 1.875rem;
     margin: 0.625rem;
-    background-color: rgb(17, 14, 20);
+    background-color: rgb(13, 10, 16);
     box-shadow: 3px 3px 8px white;
+}
+
+footer a {
+    color: white;
+    padding: 0.125rem;
+    text-decoration: none;
+}
+
+#rodape-container {
+    align-items: center;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    flex: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.icones-sociais, .copyright {
+    display: flex;
+    gap: 0.3125rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 0.625rem 1.25rem;
 }
 
 @media (max-width: 1024px) {
