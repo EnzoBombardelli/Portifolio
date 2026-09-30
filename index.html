@@ -10,36 +10,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Imagens/Bomba2.png">
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="index.html" class="navbtn pagina-ativa">Início</a>
-            <a href="index.html#sobre-mim" class="navbtn">Sobre Mim</a>
-            <a href="index.html#final" class="navbtn">Contatos</a>
-            <a href="LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
-            <a href="PensamentoComputacional.html" class="navbtn">Pensamento Computacional</a>
-            <a href="ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="#apresentacao" class="nav-btn active" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="#Projetos" class="nav-btn" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
+        <div class="espacovazio"></div>
         <section id="apresentacao">
-            <h2>ENZO</h2>
-            <h1>BOMBARDELLI</h1>
-            <h3>Engenheiro de Software</h3>
+            <h2 class="Nome">ENZO</h2>
+            <h1 class="Sobrenome">BOMBARDELLI</h1>
+            <h3 class="Profissao">Engenheiro de Software</h3>
             <div class="button-container">
-                <a href="index.html#sobre-mim" class="btn-outline">Sobre Mim</a>
-                <a href="index.html#final" class="btn-outline">Contatos</a>
+                <a href="#SobreMim" class="btn-outline" data-index="1" aria-label="Sobre Mim">Sobre Mim</a>
+                <a href="#Projetos" class="btn-outline" data-index="2" aria-label="Projetos">Projetos</a>
             </div>
         </section>
 
-        <section id="sobre-mim">
-            <div class="div1">
-                <h2 id="TituloSM">Sobre Mim</h2>
+        <div id="SobreMim">
+            <div class="TituloSM">
+                <h2 class="Titulos">Sobre Mim</h2>
             </div>
-            <div class="div2">
-                <p id="SobreSM">
+            <div class="SobreSM">
+                <p class="Descricoes">
                 Eu sou Enzo Bombardelli e Silva, tenho 18 anos de idade e atualmente estou cursando engenharia de software no 
                 Centro Universitário Filadélfia - UniFil, em Londrina-PR. Neste momento estou no segundo semestre, do primeiro ano de 
                 curso. Tenho como objetivo conhecer todas as áreas da engenharia de software, para descobrir qual eu realmente me 
@@ -47,34 +61,113 @@
                 profissional completo e eficiente.
                 </p>
             </div>
-            <div class="div3">
-                <p id="MimSM">
+            <div class="MimSM">
+                <p class="Descricoes">
                 Além dos interesses tecnologicos, desde de criança sou apaixonado por esportes, principalmente futebol e futsal, 
                 prático desde os 6 anos e nunca parei. Fora o futebol, faço musculação e acompanho muito outros esportes, como 
                 basquete e automobilismo, mas tenho interesse vários outros.
                 </p>
             </div>
-            <div class="div4">
-                <img src="../imagens/AulasEMBREVE.jpeg" alt="Foto de perfil" id="FotoPerfil">
+            <div class="FotoPerfil">
+                <img src="../imagens/FotoPerfil.png" alt="Foto de perfil" id="FotoPerfil">
             </div>
-        </section>
+        </div>
 
-        <section id="LinguagensFerramentas">
-            <h2>Linguagens e Ferramentas</h2>
-            <ul class="Linguagens">
-                <li class="linguagens">HTML</li>
-                <li class="linguagens">CSS</li>
-                <li class="linguagens">Java</li>
-                <li class="linguagens">JavaScript</li>
-            </ul>
-            <ul class="Ferramentas">
-                <li class="ferramentas">Git</li>
-                <li class="ferramentas">GitHub</li>
-                <li class="ferramentas">IntelliJ IDEA</li>
-                <li class="ferramentas">Visual Studio Code</li>
-            </ul>
-        </section>
-        <div id="final"></div> 
+        <div id="LinguagensFerramentas">
+            <div class="TituloLF">
+                <h2 class="Titulos">Linguagens e Ferramentas</h2>
+            </div>
+            <div class="HTML">
+                <img class="IconesLF" src="imagens/HTML.svg" alt="HTML">
+            </div>
+            <div class="CSS">
+                <img class="IconesLF" src="imagens/CSS.svg" alt="CSS">
+            </div>
+            <div class="JavaScript">
+                <img class="IconesLF" src="imagens/JS.svg" alt="JavaScript">
+            </div>
+            <div class="Java">
+                <img class="IconesLF" src="imagens/Java.svg" alt="Java">
+            </div>
+            <div class="Git">
+                <img class="IconesLF" src="imagens/Git.svg" alt="Git">
+            </div>
+            <div class="GitHub">
+                <img class="IconesLF" src="imagens/GitHub.webp" alt="GitHub">
+            </div>
+            <div class="IntelliJ">
+                <img class="IconesLF" src="imagens/IntelliJ.svg" alt="IntelliJ IDEA">
+            </div>
+            <div class="VSCode">
+                <img class="IconesLF" src="imagens/VSCode.svg" alt="Visual Studio Code">
+            </div>
+
+            <div class="TituloC">
+                <h2 class="Titulos">Currículo</h2>
+            </div>
+            <div class="Curriculo">
+                <a href="imagens/Curriculo-EnzoBombardelli.pdf" target="_blank" class="card" id="card-curriculo">
+                    <div>
+                        <span class="tipo">PDF</span>
+                        <h3 id="h3curriculo">Meu currículo profissional</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="Projetos">
+            <div class="TituloP">
+                <h2 class="Titulos">Projetos</h2>
+            </div>
+            <div class="DescricaoP">
+                <p class="Descricoes">
+                    Aqui estão alguns dos projetos que desenvolvi durante o curso de engenharia de software.
+                    Onde você verá desde projetos desenvolvidos na universidade, até a minha atuação prática como monitor de tecnologia.
+                </p>
+            </div>
+            <div class="PensamentoComputacional">
+                <a href="PensamentoComputacional.html" class="card">
+                    <div>
+                        <span class="tipo">HTML e CSS</span>
+                        <h2>Monitoria do</h2>
+                        <h3>Pensamento Computacional</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Relatórios da monitoria</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+            </div>
+            <div class="LondrinenseTech">
+                <a href="LondrinenseTech.html" class="card">
+                    <div>
+                        <span class="tipo">HTML e CSS</span>
+                        <h2>Monitoria do</h2>
+                        <h3>LondrinenseTech</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Relatórios da monitoria</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+            </div>
+            <div class="ProjetoInterdisciplinar">
+                <a href="ProjetoInterdisciplinar.html" class="card">
+                    <div>
+                        <span class="tipo">HTML e CSS</span>
+                        <h2>Matérias</h2>
+                        <h3>Projeto Interdisciplinar</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Resumo das matérias</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
     <footer id="rodape-container">    
         <div class="icones-sociais">
@@ -86,5 +179,7 @@
         </div>
         <p class="copyright">© 2026 Enzo Bombardelli.</p>
     </footer>
+    <script src="jss/holofote.js"></script>
+    <script src="jss/script.js"></script>
 </body>
 </html>

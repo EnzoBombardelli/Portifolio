@@ -1,5 +1,7 @@
+html {
+    scroll-padding-top: 100px;
+}
 
-/* style.css */
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +10,6 @@
 
 body {
     background-color: rgb(13, 10, 16);
-    color: var(--texto-lilac);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -16,35 +17,34 @@ body {
     margin: 0;
 }
 
-.navbar {
-    align-items: center;
-    background-color: rgb(13, 10, 16);
-    padding: 0.625rem 1.25rem; 
-    color: white;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1.0625rem; /* Você já usava rem aqui, parabéns! */
-    font-style: normal;
-    font-weight: 700;
-    justify-content: space-between;
-    text-decoration: none;
-    transition: 0.3s;
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 1.2rem 1rem 0 1rem;
+        height: auto; /* Permite que o header cresça conforme necessário no mobile */
+    }
+    .navbar-vazio {
+        display: none; 
+    }
+    .navbar-nome h6 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .nav-container {
+        width: 100%;
+        max-width: 400px;
+        height: 60px;
+    }
 }
 
-.navbtn {
-    color: white;
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6, p, a, li, span, button{
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    padding: 0.625rem; /* 10px -> 0.625rem */
 }
 
-.pagina-ativa {
-    border-bottom: #4f0160 2px solid !important; /* Bordas ficam em px */
-    color: #4f0160 !important;
-    font-weight: 700;
+button {
+    font-size: 1rem;
 }
 
 @media (max-width: 37.5em) {

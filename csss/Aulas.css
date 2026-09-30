@@ -4,7 +4,7 @@
     margin-right: 0rem;
     margin-bottom: 0rem;
     padding: 0.5rem 0.75rem;
-    background-color: rgb(15, 12, 18);
+    background-color: rgb(13, 10, 16);
     color: white;
     font-size: 0.9375rem;
     cursor: pointer;
@@ -15,7 +15,6 @@
 
 h1 {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 3.5rem;
     line-height: 1.1;
     margin: 0;
@@ -24,7 +23,6 @@ h1 {
 
 h2 {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.75rem;
     line-height: 1.2;
     margin: 0;
@@ -33,7 +31,6 @@ h2 {
 
 h3 {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     line-height: 1.4;
     margin: 0;
@@ -42,7 +39,6 @@ h3 {
 
 .londrinensetechaulas {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.05rem;
     line-height: 1.6;
     margin: 0;
@@ -123,7 +119,6 @@ footer a {
     display: flex;
     gap: 0.3125rem;
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400; 
     padding: 0.625rem 1.25rem;
 }
