@@ -19,13 +19,19 @@
         </div>
         
         <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
-            <a href="index.html#apresentacao" class="nav-btn">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
                 <span class="nav-text">Início</span>
             </a>
-            <a href="index.hmtl#SobreMim" class="nav-btn">
+            <a href="index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
                 <span class="nav-text">Sobre Mim</span>
             </a>
-            <a href="index.html#Projetos" class="nav-btn">
+            <a href="index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
                 <span class="nav-text">Projetos</span>
             </a>
         </nav>
@@ -46,242 +52,280 @@
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula1.html" class="card">
                     <div>
-                        <span class="card-tag">OBI</span>
+                        <span class="tipo">OBI</span>
                         <h3>Aula 1: 12 Mai</h3>
                         <p>Exercícios de treinamento para a OBI</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turmas 8° e 9°</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula2.html" class="card">
                     <div>
-                        <span class="card-tag">HTML & CSS</span>
+                        <span class="tipo">HTML & CSS</span>
                         <h3>Aula 2: 19 Mai</h3>
                         <p>Revisão do conteúdo(HTML e CSS)</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula3.html" class="card">
                     <div>
-                        <span class="card-tag">LondrinenseTech</span>
+                        <span class="tipo">HTML, CSS & JS</span>
                         <h3>Aula 3: 26 Mai</h3>
                         <p>Introdução ao HTML, CSS e JavaScript</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula4.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3>Aula 4: 06 Jun</h3>
+                        <span class="tipo">HTML & CSS</span>
+                        <h3>Aula 4: 02 Jun</h3>
                         <p>Aprofundando em HTML e CSS</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula5.html" class="card">
                     <div>
-                        <span class="card-tag">LondrinenseTech</span>
-                        <h3>Aula 5: 06 Jun</h3>
+                        <span class="tipo">CSS</span>
+                        <h3>Aula 5: 09 Jun</h3>
                         <p>Aprofundamento em CSS</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula6.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3>Aula 10 : 06 Jun</h3>
+                        <span class="tipo">HTML & CSS</span>
+                        <h3>Aula 6: 16 Jun</h3>
                         <p>Revisão para as Férias</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula7.html" class="card">
                     <div>
-                        <span class="card-tag">LondrinenseTech</span>
-                        <h3>Aula 7: 16 Jun</h3>
+                        <span class="tipo">HTML & CSS</span>
+                        <h3>Aula 7: 23 Jun</h3>
                         <p>Revisão para retomar o ritmo</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Acessar</span>
+                        <span class="botao-ver">Acessar</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula8.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3>Aula 8: 17 Jun</h3>
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3>Aula 8: 30 Jun</h3>
                         <p>Revisão para retomar o ritmo</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula9.html" class="card">
                     <div>
-                        <span class="card-tag">LondrinenseTech</span>
-                        <h3>Aula 9: 23 Jun</h3>
+                        <span class="tipo">LondrinenseTech</span>
+                        <h3>Aula 9: 07 Jul</h3>
                         <p>Site do Homem-Aranha e formulário</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula10.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3>Aula 10: 30 Jun</h3>
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3>Aula 10: 28 Jul</h3>
                         <p>Aprofundamento em Box Model</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula11.html" class="card">
                     <div>
-                        <span class="card-tag">LondrinenseTech</span>
-                        <h3 >Aula 11: 24 Ago</h3>
+                        <span class="tipo">LondrinenseTech</span>
+                        <h3 >Aula 11: 04 Ago</h3>
                         <p>Aprimoramento de Layouts com Flexbox</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula12.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 12: 01 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 12: 11 Ago</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula13.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 13: 08 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 13: 18 Ago</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula14.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 14: 15 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 14: 25 Ago</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula15.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 15: 22 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 15: 01 Set</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula16.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 16: 29 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 16: 08 Set</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula17.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 17: 29 Set</h3>                            
-                        <p>Design de Interface com CSS Grid</p>
+                        <span class="tipo">Sem relatório</span>
+                        <h3 >Aula 17: 15 Set</h3>                            
+                        <p>Não compareci por problemas de saúde</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
 
                 <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula18.html" class="card">
                     <div>
-                        <span class="card-tag">Pensamento Computacional</span>
-                        <h3 >Aula 18: 08 Set</h3>                            
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 18: 22 Set</h3>                            
                         <p>Design de Interface com CSS Grid</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-turma">Turma 4</span>
-                        <span class="btn-visual">Ver</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+
+                <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula19.html" class="card">
+                    <div>
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 19: 29 Set</h3>                            
+                        <p>Design de Interface com CSS Grid</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Turma 4</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+
+                <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula20.html" class="card">
+                    <div>
+                        <span class="tipo">Pensamento Computacional</span>
+                        <h3 >Aula 20: 06 Out</h3>                            
+                        <p>Design de Interface com CSS Grid</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Turma 4</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+
+                <a href="PensamentoComputacional.html" class="card">
+                    <div>
+                        <span class="tipo">Em Breve</span>
+                        <h3 >Aula 21: 20 Out</h3>                            
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Turma 4</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+
+                <a href="PensamentoComputacional.html" class="card">
+                    <div>
+                        <span class="tipo">Em Breve</span>
+                        <h3 >Aula 22: 27 Out</h3>                            
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Turma 4</span>
+                        <span class="botao-ver">Ver</span>
+                    </div>
+                </a>
+
+                <a href="PensamentoComputacional.html" class="card">
+                    <div>
+                        <span class="tipo">Em Breve</span>
+                        <h3 >Aula 23: 03 Out</h3>                            
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-turma">Turma 4</span>
+                        <span class="botao-ver">Ver</span>
                     </div>
                 </a>
             </div>
-
-        
-        <div class="botoes-aulas">
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula1.html" class="card">Aula 1: 12/05</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula2.html" class="card">Aula 2: 19/05</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula3.html" class="card">Aula 3: 26/05</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula4.html" class="card">Aula 4: 02/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula5.html" class="card">Aula 5: 09/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula6.html" class="card">Aula 6: 10/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula7.html" class="card">Aula 7: 16/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula8.html" class="card">Aula 8: 17/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula9.html" class="card">Aula 9: 23/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula10.html" class="card">Aula 10: 30/06</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula11.html" class="card">Aula 11: 07/07</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula12.html" class="card">Aula 12: 28/07</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula13.html" class="card">Aula 13: 04/08</a>
-            <a href="PensamentoComputacionalAulasHTML/PensamentoComputacionalAula14.html" class="card">Aula 14: 11/08</a>
-            Aula 15: 18/08</a>
-            Aula 16: 25/08</a>
-            Aula 17: 01/09</a>
-            Aula 18: 08/09</a>
-        </div>
     </main>
     <footer id="rodape-container">    
         <div class="icones-sociais">

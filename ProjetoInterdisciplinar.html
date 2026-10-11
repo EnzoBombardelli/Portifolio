@@ -19,13 +19,19 @@
         </div>
         
         <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
-            <a href="index.html#apresentacao" class="nav-btn">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
                 <span class="nav-text">Início</span>
             </a>
-            <a href="index.hmtl#SobreMim" class="nav-btn">
+            <a href="index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
                 <span class="nav-text">Sobre Mim</span>
             </a>
-            <a href="index.html#Projetos" class="nav-btn">
+            <a href="index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
                 <span class="nav-text">Projetos</span>
             </a>
         </nav>

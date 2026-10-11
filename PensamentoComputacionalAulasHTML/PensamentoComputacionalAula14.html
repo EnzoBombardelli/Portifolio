@@ -16,18 +16,30 @@
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="../index.html" class="navbtn">Início</a>
-            <a href="../index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="../index.html#rodape-container" class="navbtn">Contatos</a>
-            <a href="../LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
-            <a href="../PensamentoComputacional.html" class="navbtn pagina-ativa">Pensamento Computacional</a>
-            <a href="../ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="../index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="../index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="../index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-
+        <div class="espacovazio"></div>
         <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
@@ -37,24 +49,26 @@
                 <h1>Pensamento Computacional</h1>
             </div>
             <div class="div2">
-                <h2>Aula 14 - Turma A: Dominando o Layout e Box Model</h2>
+                <h2>Aula 14 - Turma A: Criação de currículo</h2>
             </div>
             <div class="div3">
-                <h3 style="margin-right: 0px;">(Terça-feira, 11/08/2026 | 14h15 às 16h00)</h3>
+                <h3 style="margin-right: 0px;">(Terça-feira, 25/08/2026 | 14h15 às 16h00)</h3>
             </div>
             <div class="div4">
                 <p style="margin-right: 0px;" class="londrinensetechaulas">
-                    Nessa aula do dia 11 de agosto, o instrutor Victor explorou os conceitos fundamentais de box model, explicando 
-                    como as dimensões e espaçamentos definem a estrutura e o comportamento dos elementos em uma página web. Para 
-                    ilustrar essa organização na prática, foram analisadas as divisões do site do YouTube, demonstrando como 
-                    grandes plataformas utilizam a estruturação e o CSS para organizar seus componentes visuais. Com o objetivo 
-                    de fixar os aprendizados sobre posicionamento de forma dinâmica, os alunos jogaram Flexbox Froggy, um desafio 
-                    interativo que permite aplicar as propriedades de alinhamento do CSS de maneira lúdica, integrando a teoria à 
-                    prática e facilitando a compreensão da arquitetura de um site.
+                    Nessa aula do dia 25 de agosto, o encontro foi dedicado a uma aula prática intensiva, 
+                    visando a aplicação direta dos conhecimentos de design e organização de layouts. Com o 
+                    objetivo de permitir que a turma transformasse a teoria em código, os alunos foram 
+                    desafiados a montar um currículo do zero, utilizando esse projeto como uma 
+                    oportunidade para aprimorar o domínio do CSS — responsável pelo estilo e "maquiagem" 
+                    das páginas — e do Flexbox. Através dessa atividade, foi possível exercitar o 
+                    posicionamento de elementos e a arquitetura de um site na prática, consolidando 
+                    técnicas avançadas de alinhamento para criar um documento profissional bem estruturado 
+                    e visualmente atraente.
                 </p>
             </div>
             <div class="div5">
-                <img src="../imagens/PCAula14.jpg" alt="Imagem da aula 16 do Pensamento Computacional" class="PCAula16">
+                <img src="../imagens/PCAula14.jpeg" alt="Imagem da aula 14 do Pensamento Computacional" class="PCAula14">
             </div>
         </div>
  

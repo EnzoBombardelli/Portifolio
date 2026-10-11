@@ -4,10 +4,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LondrinenseTech - Aula 23</title>
+        <title>LondrinenseTech - Aula 24</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
             <link rel="stylesheet" href="../csss/style.css">
-            <link rel="stylesheet" href="../csss/ Aulas.css">
+            <link rel="stylesheet" href="../csss/Aulas.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,18 +16,30 @@
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="../index.html" class="navbtn">Início</a>
-            <a href="../index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="../index.html#rodape-container" class="navbtn">Contatos</a>
-            <a href="../LondrinenseTech.html" class="navbtn pagina-ativa">LondrinenseTech</a>
-            <a href="../PensamentoComputacional.html" class="navbtn">Pensamento Computacional</a>
-            <a href="../ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="../index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="../index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="../index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-        
+        <div class="espacovazio"></div>
         <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>

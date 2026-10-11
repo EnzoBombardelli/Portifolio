@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pensamento Computacional - Aula 9</title>
+        <title>Pensamento Computacional - Aula 09</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
             <link rel="stylesheet" href="../csss/style.css">
             <link rel="stylesheet" href="../csss/Aulas.css">
@@ -16,18 +16,30 @@
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="../index.html" class="navbtn">Início</a>
-            <a href="../index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="../index.html#rodape-container" class="navbtn">Contatos</a>
-            <a href="../LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
-            <a href="../PensamentoComputacional.html" class="navbtn pagina-ativa">Pensamento Computacional</a>
-            <a href="../ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="../index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="../index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="../index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-
+        <div class="espacovazio"></div>
         <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
@@ -37,26 +49,27 @@
                 <h1>Pensamento Computacional</h1>
             </div>
             <div class="div2">
-                <h2>Aula 9 - Turma A: Ensino do HTML semântico</h2>
+                <h2>Aula 09 - Turma A: Tabelas em HTML</h2>
             </div>
             <div class="div3">
-                <h3 style="margin-right: 0px;">(Terça-feira, 23/06/2026 | 14h15 às 16h00)</h3>
+                <h3 style="margin-right: 0px;">(Quarta-feira, 07/07/2026 | 14h15 às 16h00)</h3>
             </div>
             <div class="div4">
                 <p style="margin-right: 0px;" class="londrinensetechaulas">
-                    Nessa aula do 23 de junho, o instrutor Victor iniciou conferindo os repositórios dos alunos no GitHub e 
-                    ensinou como hospedar os sites através do GitHub Pages. Na sequência, foram apresentados conceitos sobre 
-                    atributos de tags HTML (como id, class e target) e a importância do uso de HTML semântico, utilizando 
-                    elementos como &lt;header&gt, &lt;main&gt; e &lt;footer&gt; para garantir uma melhor organização e manutenção 
-                    do código.
-                    Para colocar a teoria em prática, os alunos utilizaram o Visual Studio Code para editar seus projetos, 
-                    aplicando IDs, classes e menus de navegação em suas páginas. A aula contou com auxílio individualizado para 
-                    aqueles que apresentaram dificuldades com comandos básicos do computador, enquanto os alunos mais avançados 
-                    demonstraram autonomia e um progresso significativo no aprendizado de desenvolvimento web.
+                    Nessa aula do dia 07, o instrutor Victor realizou uma revisão sobre formulários em HTML, apresentando 
+                    novamente o código de aulas passadas para consolidar o uso de tags como &lt;input&gt;, checkbox e radio. Na 
+                    sequência, foi introduzido o estudo de tabelas em HTML, abrangendo elementos como &lt;table&gt;, &lt;tr&gt;, 
+                    &lt;td&gt; e &lt;caption&gt;, além de propriedades de CSS para a criação de bordas e melhoria visual das 
+                    estruturas.
+                    Com o objetivo de transformar a teoria em prática, os alunos foram desafiados a criar uma tabela de horários 
+                    escolares no Visual Studio Code, explorando atributos avançados como colspan e rowspan para a organização de 
+                    linhas e colunas. Durante a atividade, foi oferecido suporte individualizado para resolver dúvidas técnicas e 
+                    auxiliar na estilização do código. O encontro foi finalizado com o envio dos arquivos para os repositórios no 
+                    GitHub e o repasse dos avisos finais antes do período de férias.
                 </p>
             </div>
-            <div class="div5">
                 <img src="../imagens/PCAula9.jpeg" alt="Imagem da aula 9 do Pensamento Computacional" class="PCAula">
+            <div class="div5">
             </div>
         </div>
  

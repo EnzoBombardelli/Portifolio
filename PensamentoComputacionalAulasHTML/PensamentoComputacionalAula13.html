@@ -16,18 +16,30 @@
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="../index.html" class="navbtn">Início</a>
-            <a href="../index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="../index.html#rodape-container" class="navbtn">Contatos</a>
-            <a href="../LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
-            <a href="../PensamentoComputacional.html" class="navbtn pagina-ativa">Pensamento Computacional</a>
-            <a href="../ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="../index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="../index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="../index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-
+        <div class="espacovazio"></div>
         <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
@@ -37,25 +49,26 @@
                 <h1>Pensamento Computacional</h1>
             </div>
             <div class="div2">
-                <h2>Aula 13 - Turma A: Aprofundamento em CSS</h2>
+                <h2>Aula 13 - Turma A: Revisão de CSS e Flexbox</h2>
             </div>
             <div class="div3">
-                <h3 style="margin-right: 0px;">(Quarta-feira, 29/07/2026 | 14h15 às 16h00)</h3>
+                <h3 style="margin-right: 0px;">(Terça-feira, 18/08/2026 | 14h15 às 16h00)</h3>
             </div>
             <div class="div4">
                 <p style="margin-right: 0px;" class="londrinensetechaulas">
-                    Nessa aula do dia 04 de agosto, o encontro foi dedicado ao aprofundamento em CSS, expandindo os conceitos de 
-                    estilização e "maquiagem" das páginas web iniciados anteriormente. O instrutor detalhou o funcionamento de 
-                    propriedades fundamentais para o controle de layout e design, como margin, border e padding, permitindo que 
-                    os alunos compreendessem como gerenciar os espaçamentos internos, externos e os contornos de cada elemento. 
-                    Com o intuito de consolidar esses aprendizados técnicos, a turma foi desafiada a realizar a criação de um 
-                    currículo, utilizando o projeto como uma oportunidade prática para aprimorar a estética visual e a 
-                    organização do código CSS. Assim como em atividades anteriores de portfólio pessoal, os alunos puderam 
-                    transformar a teoria em código, focando na arquitetura visual e na experiência do usuário.
+                    Nessa aula do dia 18 de agosto, devido ao baixo número de alunos, a turma do instrutor Felipe se uniu à nossa para 
+                    uma sessão de revisão e alinhamento. O encontro contou com um resumo geral de CSS, reforçando os conceitos de 
+                    estilização e a função do CSS como a "maquiagem" e estilo das páginas web. Com o objetivo de fixar os aprendizados 
+                    de forma dinâmica, os alunos participaram de uma partida de Blooket sobre CSS, utilizando o jogo para revisar 
+                    os conteúdos de maneira lúdica. Na sequência, o instrutor apresentou um resumo sobre Flexbox, detalhando as 
+                    propriedades de alinhamento e a organização de elementos no layout. Para consolidar o conhecimento técnico, a aula 
+                    foi finalizada com um segundo Blooket focado em Flexbox, permitindo que a turma transformasse a teoria em 
+                    prática competitiva e interativa.
+                </p>
                 </p>
             </div>
             <div class="div5">
-                <img src="../imagens/PCAula13.jpeg" alt="Imagem da aula 15 do Pensamento Computacional" class="PCAula15">
+                <img src="../imagens/PCAula13.jpg" alt="Imagem da aula 13 do Pensamento Computacional" class="PCAula13">
             </div>
         </div>
  

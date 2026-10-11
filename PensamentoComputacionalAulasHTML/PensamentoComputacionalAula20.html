@@ -16,18 +16,30 @@
 </head>
 <body>
     <header class="navbar">
-        <nav> 
-            <a href="../index.html" class="navbtn">Início</a>
-            <a href="../index.html#SobreMim" class="navbtn">Sobre Mim</a>
-            <a href="../index.html#rodape-container" class="navbtn">Contatos</a>
-            <a href="../LondrinenseTech.html" class="navbtn">LondrinenseTech</a>
-            <a href="../PensamentoComputacional.html" class="navbtn pagina-ativa">Pensamento Computacional</a>
-            <a href="../ProjetoInterdisciplinar.html" class="navbtn">Projeto Interdisciplinar</a>
+        <div class="navbar-nome">
+            <h6>Enzo Bombardelli</h6>
+        </div>
+        
+        <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
+            <div class="holofote-wrapper" id="holofoteWrapper">
+                <div class="indicator-bar"></div>
+                <div class="holofote-cone"></div>
+                <div class="bottom-glow"></div>
+            </div>
+
+            <a href="../index.html#apresentacao" class="nav-btn" data-index="0" aria-label="Início">
+                <span class="nav-text">Início</span>
+            </a>
+            <a href="../index.html#SobreMim" class="nav-btn" data-index="1" aria-label="Sobre Mim">
+                <span class="nav-text">Sobre Mim</span>
+            </a>
+            <a href="../index.html#Projetos" class="nav-btn active" data-index="2" aria-label="Projetos">
+                <span class="nav-text">Projetos</span>
+            </a>
         </nav>
-        <div class="telefone">+55 43 99646-5917</div>
     </header>
     <main>
-
+        <div class="espacovazio"></div>
         <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
@@ -37,24 +49,25 @@
                 <h1>Pensamento Computacional</h1>
             </div>
             <div class="div2">
-                <h2>Aula 20 - Turma A: Introdução ao JavaScript e Lógica de Programação</h2>
+                <h2>Aula 20 - Turma A: Aplicação Prática de Lógica e Estruturas Condicionais em JavaScript</h2>
             </div>
             <div class="div3">
-                <h3 style="margin-right: 0px;">(Terça-feira, 22/09/2026 | 14h15 às 16h00)</h3>
+                <h3 style="margin-right: 0px;">(Terça-feira, 06/10/2026 | 14h15 às 16h00)</h3>
             </div>
             <div class="div4">
                 <p style="margin-right: 0px;" class="londrinensetechaulas">
-                    Nessa aula do dia 22 de setembro, o instrutor Victor apresentou uma introdução à linguagem de programação JavaScript, responsável por definir a lógica e o 
-                    comportamento das aplicações web. Para organizar o ambiente de desenvolvimento no Visual Studio Code, os alunos criaram a estrutura inicial do projeto 
-                    composta pelos arquivos index.html, style.css e script.js. Em seguida, foram explicadas as ferramentas de inspeção dos navegadores, destacando a 
-                    aba de elementos para visualização do código HTML e o console para execução de comandos. O instrutor detalhou a declaração de variáveis com let e const, 
-                    abordando os tipos number, string e boolean, além do uso do comando console.log(). Com o intuito de aplicar esses conceitos, os estudantes realizaram quatro 
-                    atividades práticas focadas em concatenação e operadores aritméticos, contando com o suporte da monitoria para esclarecer dúvidas e exercitar a criação de 
-                    variáveis, o que permitiu à turma demonstrar facilidade ao transformar a teoria em código antes de realizar o envio dos projetos para o GitHub.
+                    Nessa aula do dia 06 de outubro, o instrutor Victor deu continuidade ao estudo de JavaScript, realizando uma 
+                    breve revisão dos conceitos apresentados em encontros anteriores. Com o objetivo de reforçar os aprendizados, 
+                    os alunos foram desafiados a desenvolver um programa de fidelidade para classificar clientes nas categorias 
+                    Bronze, Prata, Ouro e Diamante, aplicando na prática o uso de variáveis — como pontos e tempo de 
+                    relacionamento — e estruturas condicionais para determinar cada resultado. Durante o exercício, a monitoria 
+                    atuou orientando os estudantes na construção da lógica, no esclarecimento de dúvidas e na retomada de 
+                    conteúdos, permitindo que a turma transformasse a teoria em código e desenvolvesse autonomia na resolução de 
+                    problemas de programação.
                 </p>
             </div>
             <div class="div5">
-                <img src="../imagens/PCAula20.jpeg" alt="Imagem da aula 20 do Pensamento Computacional" class="PCAula20">
+                <img src="../imagens/PCAula20.jpg" alt="Imagem da aula 20 do Pensamento Computacional" class="PCAula20">
             </div>
         </div>
  
