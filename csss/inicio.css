@@ -1,3 +1,4 @@
+/*Geral*/
 .Titulos {
     color: white;
     font-size: 4rem;
@@ -14,6 +15,7 @@
     box-sizing: border-box;
 }
 
+/*Apresentação*/
 #apresentacao {
     align-items: flex-start;
     box-sizing: border-box;
@@ -102,6 +104,7 @@
   color: black;
 }
 
+/*Sobre mim*/
 #SobreMim {  
     margin: 1.25rem 5% 6.25rem 5%;
     display: grid;
@@ -162,6 +165,7 @@
     margin-bottom: 10px;
 }
 
+/*Projetos*/
 #Projetos {
     margin: 1.25rem 5% 5rem 5%;
     display: grid;
@@ -182,6 +186,7 @@
 .TituloP { grid-area: TituloP; }
 .DescricaoP { grid-area: DescricaoP; }
 
+/*Botões*/
 .card {
     background-color: rgb(70, 70, 70);
     border: 1px solid rgb(70, 70, 70);
@@ -284,54 +289,4 @@ footer a {
     color: white;
     font-weight: 400; 
     padding: 0.9rem 1.5rem;
-}
-
-@media (max-width: 1024px) {
-    #apresentacao {
-        padding-left: 3.125rem;
-        padding-right: 1.875rem;
-        padding-bottom: 3.75rem;
-        width: 100%;
-    }
-
-    h3 { letter-spacing: 0.3em; }
-
-    .button-container {
-        gap: 1.5625rem;
-        margin-left: 1.25rem;
-        flex-wrap: wrap;
-    }
-
-    #SobreMim, #LinguagensFerramentas {
-        margin-left: 1.25rem;
-        margin-right: 2.5rem;
-        margin-bottom: 6.25rem;
-    }
-}
-
-@media (max-width: 600px) {
-    #apresentacao {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        padding-bottom: 2.5rem;
-    }
-
-    h3 { letter-spacing: 0.15em; }
-
-    .button-container {
-        flex-direction: column;
-        gap: 0.9375rem;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .btn-outline { 
-        max-width: 100%;
-    }
-
-    #SobreMim, #LinguagensFerramentas {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 3.125rem;
-    }
 }

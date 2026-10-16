@@ -1,6 +1,6 @@
 const menuNavegacao = document.getElementById('navContainer');
 const botoes = document.querySelectorAll('.nav-btn');
-const focoDeLuz = document.getElementById('holofoteWrapper'); // Voltei para spotlightWrapper que é o ID real no teu HTML
+const focoDeLuz = document.getElementById('holofoteWrapper');
 let indiceAtivo = 0;
 
 function atualizarMenu(indice) {
