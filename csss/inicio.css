@@ -176,13 +176,13 @@
     grid-template-areas:
     "TituloP PensamentoComputacional"
     "DescricaoP PensamentoComputacional"
-    "ProjetoInterdisciplinar PensamentoComputacional"
-    "ProjetoInterdisciplinar LondrinenseTech";
+    "DesenvolvimentoWeb PensamentoComputacional"
+    "DesenvolvimentoWeb LondrinenseTech";
 }
 
 .PensamentoComputacional { grid-area: PensamentoComputacional; }
 .LondrinenseTech { grid-area: LondrinenseTech; }
-.ProjetoInterdisciplinar { grid-area: ProjetoInterdisciplinar; }
+.DesenvolvimentoWeb { grid-area: DesenvolvimentoWeb; }
 .TituloP { grid-area: TituloP; }
 .DescricaoP { grid-area: DescricaoP; }
 
