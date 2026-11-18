@@ -26,3 +26,23 @@ botoes.forEach(botao => {
         }
     }
 });
+
+/*Animação de entrada ao rolar a página*/
+function animarSeccoesAoRolar() {
+    const seccoes = document.querySelectorAll('#SobreMim, #LinguagensFerramentas, #Projetos');
+    const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('visivel');
+                observador.unobserve(entrada.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    seccoes.forEach(seccao => {
+        seccao.classList.add('revelar');
+        observador.observe(seccao);
+    });
+}
+
+animarSeccoesAoRolar();

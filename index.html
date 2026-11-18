@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Enzo Bombardelli</title>
+    <title>Portfólio - Enzo Bombardelli</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="csss/style.css">
     <link rel="stylesheet" href="csss/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./Imagens/Logobomba.png">
+    <link rel="icon" type="image/png" href="imagens/Logobomba.png">
 </head>
 <body>
     <header class="navbar">
         <div class="navbar-nome">
             <h6>Enzo Bombardelli</h6>
         </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navContainer">
+            <span class="menu-toggle-barra"></span>
+            <span class="menu-toggle-barra"></span>
+            <span class="menu-toggle-barra"></span>
+        </button>
         
         <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
             <div class="holofote-wrapper" id="holofoteWrapper">
@@ -48,7 +53,7 @@
             </div>
         </section>
 
-        <div id="SobreMim">
+        <section id="SobreMim">
             <div class="TituloSM">
                 <h2 class="Titulos">Sobre Mim</h2>
             </div>
@@ -71,9 +76,9 @@
             <div class="FotoPerfil">
                 <img src="imagens/FotoPerfil.png" alt="Foto de perfil" id="FotoPerfil">
             </div>
-        </div>
+        </section>
 
-        <div id="LinguagensFerramentas">
+        <section id="LinguagensFerramentas">
             <div class="TituloLF">
                 <h2 class="Titulos">Linguagens e Ferramentas</h2>
             </div>
@@ -116,9 +121,9 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <div id="Projetos">
+        <section id="Projetos">
             <div class="TituloP">
                 <h2 class="Titulos">Projetos</h2>
             </div>
@@ -167,7 +172,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
     <footer id="rodape-container">    
         <div class="icones-sociais">
@@ -181,5 +186,6 @@
     </footer>
     <script src="jss/holofote.js"></script>
     <script src="jss/script.js"></script>
+    <script src="jss/menu.js"></script>
 </body>
 </html>

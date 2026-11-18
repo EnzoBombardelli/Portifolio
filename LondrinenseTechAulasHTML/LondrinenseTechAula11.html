@@ -11,13 +11,18 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
-            <link rel="icon" type="image/png" href="./Imagens/Logobomba.png">
+            <link rel="icon" type="image/png" href="../imagens/Logobomba.png">
 </head>
 <body>
     <header class="navbar">
         <div class="navbar-nome">
             <h6>Enzo Bombardelli</h6>
         </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navContainer">
+            <span class="menu-toggle-barra"></span>
+            <span class="menu-toggle-barra"></span>
+            <span class="menu-toggle-barra"></span>
+        </button>
 
         <nav class="nav-container" id="navContainer" aria-label="Navegação Principal" tabindex="0">
             <div class="holofote-wrapper" id="holofoteWrapper">
@@ -39,7 +44,7 @@
     </header>
     <main>
         <div class="espacovazio"></div>
-        <div class="Aula">
+        <article class="Aula">
             <div class="BotaoVoltar">
                 <button class="botao-voltar" onclick="window.history.back(); event.preventDefault();">
                     <span class="material-symbols-outlined">arrow_back</span>
@@ -69,7 +74,7 @@
             <div class="FotoAula">
                 <img src="../imagens/LTAula11.jpeg" alt="Imagem da aula 11 do LondrinenseTech" class="FotoAulas">
             </div>
-        </div>
+        </article>
     </main>
     <footer id="rodape-container">
         <div class="icones-sociais">
@@ -83,6 +88,7 @@
         </div>
         <p class="copyright">© 2026 Enzo Bombardelli.</p>
     </footer>
+    <script src="../jss/menu.js"></script>
 </body>
 
 </html>

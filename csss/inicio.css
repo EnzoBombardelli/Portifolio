@@ -1,122 +1,113 @@
-/*Geral*/
-.Titulos {
-    color: white;
-    font-size: 4rem;
-    font-weight: 700;
+/*Inicio*/
+.Titulos { 
+    color: white; 
+    font-size: 2rem; 
+    font-weight: 700; 
+    line-height: 1.2; 
 }
 
-.Descricoes {
-    color: white;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.Descricoes { 
+    color: white; 
+    font-weight: 400; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+}
+
+/*Animações*/
+@keyframes entrada-suave {
+    from { opacity: 0; transform: translateY(25px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.Nome, .Sobrenome, .Profissao, .button-container { animation: entrada-suave 0.9s ease both; }
+.Sobrenome { animation-delay: 0.15s; }
+.Profissao { animation-delay: 0.3s; }
+.button-container { animation-delay: 0.45s; }
+
+.revelar { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.revelar.visivel { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+    .Nome, .Sobrenome, .Profissao, .button-container { animation: none; }
+    .revelar { opacity: 1; transform: none; transition: none; }
 }
 
 /*Apresentação*/
 #apresentacao {
-    align-items: flex-start;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     min-height: 100vh;
-    padding-bottom: 6.25rem;
-    padding-left: 5%;
-    width: 36%;
-    background-image: 
-        linear-gradient(to bottom, 
-        rgb(13, 10, 16) 0%, 
-        rgba(35, 35, 40, 0) 20%, 
-        rgba(35, 35, 40, 0) 80%, 
-        rgb(13, 10, 16) 100%), 
+    min-height: 100svh;
+    width: 100%;
+    padding: 0 max(1.25rem, calc((100% - var(--largura-max)) / 2 + 5%)) 4rem;
+    background-image:
+        linear-gradient(to bottom, rgb(13, 10, 16) 0%, rgba(35, 35, 40, 0) 20%, rgba(35, 35, 40, 0) 80%, rgb(13, 10, 16) 100%),
         url('../imagens/Fundo-Portifolio.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
 }
 
-.Nome {
-    box-sizing: border-box;
-    color: white;
-    font-weight: 400;
-    font-size: clamp(2rem, 4.5vw, 3.75rem);
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-}
+.Nome { color: white; font-weight: 400; font-size: clamp(2rem, 8vw, 3.75rem); line-height: 1; }
 
-.Sobrenome{
+.Sobrenome {
     color: white;
     font-weight: 900;
-    font-size: clamp(2.5rem, 5.5vw, 4.375rem);
+    font-size: clamp(1.75rem, 9vw, 4.375rem);
     line-height: 1;
-    margin: 0 0 0 0.1875rem;
-    padding: 0;
-    box-sizing: border-box;
+    margin-left: 0.1875rem;
 }
 
 .Profissao {
     color: white;
     font-weight: 300;
-    font-size: clamp(0.9rem, 1.8vw, 1.53rem);
-    letter-spacing: 0.48em;
-    line-height: 1;
-    margin: 0 0 0 0.28125rem;
-    padding: 0;
-    box-sizing: border-box;
-    white-space: nowrap;
+    font-size: clamp(0.75rem, 3vw, 1.53rem);
+    letter-spacing: 0.2em;
+    line-height: 1.3;
+    margin: 0.4rem 0 0 0.28125rem;
 }
 
 .button-container {
     display: flex;
-    gap: 3.125rem;
-    margin-top: 1.5rem;
-    margin-left: 3.1875rem;
-    padding: 0;
-    box-sizing: border-box;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    margin: 1.5rem 0 0 0.2rem;
 }
 
 .btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
     text-decoration: none;
     color: white;
     border: 2px solid white;
     border-radius: 1.5rem;
-    font-size: 0.9375rem;
-    transition: 0.3s;
+    font-size: 1rem;
     font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    max-width: 14rem;
-    height: 2.8125rem;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    transition: 0.3s;
 }
 
-.btn-outline:hover {
-  background-color: white;
-  color: black;
+.btn-outline:hover { background-color: white; color: black; }
+
+/*Seções*/
+#SobreMim, #LinguagensFerramentas, #Projetos {
+    width: 90%;
+    max-width: var(--largura-max);
+    margin: 1.5rem auto 3rem;
 }
 
 /*Sobre mim*/
-#SobreMim {  
-    margin: 1.25rem 5% 6.25rem 5%;
+#SobreMim {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.4fr;
-    grid-auto-columns: 1fr;
-    gap: 1rem 5rem;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "TituloSM FotoPerfil"
-    "SobreSM FotoPerfil"
-    "MimSM FotoPerfil";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-areas: "TituloSM" "FotoPerfil" "SobreSM" "MimSM";
 }
 
 .FotoPerfil { grid-area: FotoPerfil; }
@@ -125,22 +116,26 @@
 .MimSM { grid-area: MimSM; }
 
 #FotoPerfil {
+    display: block;
     width: 100%;
-    height: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
     border-radius: 1.5rem;
+    object-fit: cover;
 }
 
-#LinguagensFerramentas {  
-    margin: 1.25rem 5% 6.25rem 5%;
-    display: grid;
-    grid-template-columns: 0.08fr 0.08fr 0.08fr 0.35fr 0.08fr 0.08fr 0.08fr 1fr 1fr;
-    grid-template-rows: 0.15fr 1fr;
-    gap: 1rem 2rem;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloC"
-    "HTML CSS JavaScript Java Git GitHub IntelliJ VSCode Curriculo";
+/*Linguagens, ferramentas e currículo*/
+#LinguagensFerramentas {
+    --icone: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
 }
+
+.TituloLF, .TituloC, .Curriculo { width: 100%; }
+.TituloC { margin-top: 1rem; }
 
 .TituloLF { grid-area: TituloLF; }
 .HTML { grid-area: HTML; }
@@ -149,35 +144,23 @@
 .Java { grid-area: Java; }
 .Git { grid-area: Git; }
 .GitHub { grid-area: GitHub; }
-.VSCode { grid-area: VSCode; }
 .IntelliJ { grid-area: IntelliJ; }
+.VSCode { grid-area: VSCode; }
 .TituloC { grid-area: TituloC; }
 .Curriculo { grid-area: Curriculo; }
-.IconesLF { width: 4rem; height: 4rem;}
 
-#card-curriculo { 
-    width: 24rem; 
-}
+.IconesLF { width: var(--icone); height: var(--icone); transition: transform 0.3s ease; }
+.IconesLF:hover { transform: scale(1.15); }
 
-#h3curriculo {
-    color: white;
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
+#card-curriculo { width: 100%; max-width: 24rem; }
+#h3curriculo { color: white; font-size: 1.25rem; margin-bottom: 10px; }
 
 /*Projetos*/
 #Projetos {
-    margin: 1.25rem 5% 5rem 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:C 0.35fr 0.4fr 0.4fr 0.45fr;
-    gap: 2rem  2rem;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "TituloP PensamentoComputacional"
-    "DescricaoP PensamentoComputacional"
-    "DesenvolvimentoWeb PensamentoComputacional"
-    "DesenvolvimentoWeb LondrinenseTech";
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas: "TituloP" "DescricaoP" "PensamentoComputacional" "LondrinenseTech" "DesenvolvimentoWeb";
 }
 
 .PensamentoComputacional { grid-area: PensamentoComputacional; }
@@ -186,107 +169,132 @@
 .TituloP { grid-area: TituloP; }
 .DescricaoP { grid-area: DescricaoP; }
 
-/*Botões*/
-.card {
-    background-color: rgb(70, 70, 70);
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 12px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-    height: 100%;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: rgb(160, 160, 160);
-}
-
-.tipo {
-    font-size: 0.75rem;
-    color: rgb(175, 175, 175);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: block;
-}
-
 .card h2 {
     color: white;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
 }
 
 .card h3 {
-    color: white;
-    font-size: 4rem;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    line-height: 1;
+    font-size: 1.75rem;
 }
 
-.card-turma{
-    color: rgb(190, 190, 190);
+/*640px*/
+@media (min-width: 640px) {
+    .button-container { flex-direction: row; max-width: none; gap: 1.5rem; }
+    .btn-outline { width: 10rem; }
+    .Descricoes { font-size: 1.1rem; }
+    .Titulos { font-size: 2.5rem; }
+    #FotoPerfil { max-width: 320px; }
+    #LinguagensFerramentas { --icone: 4rem; }
+
+    #Projetos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "TituloP TituloP"
+            "DescricaoP DescricaoP"
+            "PensamentoComputacional LondrinenseTech"
+            "DesenvolvimentoWeb DesenvolvimentoWeb";
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+    }
+
+    .card h3 {
+        font-size: 2rem;
+    }
 }
 
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgb(50, 50, 50);
-    padding-top: 15px;
+/*768px*/
+@media (min-width: 768px) {
+    .Titulos { font-size: 3rem; }
+    .Descricoes { font-size: 1.2rem; }
+    .Profissao { letter-spacing: 0.48em; white-space: nowrap; }
+    .button-container { margin-left: 0.5rem; }
+    #SobreMim, #LinguagensFerramentas, #Projetos { margin-bottom: 4rem; }
+
+    #SobreMim {
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem 2.5rem;
+        grid-template-areas: "TituloSM FotoPerfil" "SobreSM FotoPerfil" "MimSM FotoPerfil";
+    }
+
+    #FotoPerfil {
+        max-width: none;
+        height: 100%;
+    }
+
+    .card h3 {
+        font-size: 2.5rem;
+    }
 }
 
-.botao-ver {
-    background-color: rgb(90, 90, 90);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: inline-block;
-    transition: background 0.3s ease;
+/*1024px*/
+@media (min-width: 1024px) {
+    .Titulos {
+        font-size: 3rem;
+    }
+
+    .Descricoes {
+        font-size: 1.4rem;
+    }
+
+    .button-container {
+        gap: 3.125rem;
+        margin-left: 3.1875rem;
+    }
+
+    #SobreMim {
+        grid-template-columns: 2.5fr 1fr;
+        gap: 1rem 5rem;
+    }
+
+    #LinguagensFerramentas {
+        --icone: 3.5rem;
+        display: grid;
+        grid-template-columns: repeat(8, var(--icone)) minmax(15rem, 1fr);
+        justify-content: normal;
+        align-items: start;
+        gap: 1rem 1.25rem;
+        grid-template-areas:
+            "TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloLF TituloC"
+            "HTML CSS JavaScript Java Git GitHub IntelliJ VSCode Curriculo";
+    }
+
+    .TituloC {
+        margin-top: 0;
+    }
+
+    #Projetos {
+        grid-template-areas:
+            "TituloP PensamentoComputacional"
+            "DescricaoP PensamentoComputacional"
+            "DesenvolvimentoWeb PensamentoComputacional"
+            "DesenvolvimentoWeb LondrinenseTech";
+        gap: 2rem;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+
+    .card h3 {
+        font-size: 3rem;
+    }
 }
 
-.card:hover .botao-ver {
-    background-color: rgb(60, 60, 60);
-}
+/*1280px+*/
+@media (min-width: 1280px) {
+    .Titulos {
+        font-size: 4rem;
+    }
 
-/*Footer*/
-footer a {
-    color: white;
-    padding: 0.125rem;
-    text-decoration: none;
-}
+    #LinguagensFerramentas {
+        --icone: 4rem;
+    }
 
-#rodape-container {
-    align-items: center;
-    display: flex;
-    gap: 1.25rem;
-    justify-content: space-between;
-    margin-top: 0.625rem;
-    flex: 1;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-    z-index: 1000;
-}
-
-.icones-sociais, .copyright {
-    display: flex;
-    gap: 0.3125rem;
-    color: white;
-    font-weight: 400; 
-    padding: 0.9rem 1.5rem;
+    .card h3 {
+        font-size: 3.5rem;
+    }
 }

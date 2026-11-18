@@ -6,10 +6,11 @@ let indiceAtivo = 0;
 function atualizarMenu(indice) {
     if (indiceAtivo === indice) return;
     
+    const inclinacao = indice > indiceAtivo ? '3deg' : '-3deg';
     indiceAtivo = indice;
     menuNavegacao.style.setProperty('--active-index', indice);
 
-    focoDeLuz.style.transform = `translateX(calc(100% * var(--active-index))) skewX(${indice > indiceAtivo ? '3deg' : '-3deg'})`;
+    focoDeLuz.style.transform = `translateX(calc(100% * var(--active-index))) skewX(${inclinacao})`;
     setTimeout(() => {
         focoDeLuz.style.transform = `translateX(calc(100% * var(--active-index))) skewX(0deg)`;
     }, 150);
@@ -35,7 +36,7 @@ botoes.forEach((botao) => {
             const seccaoDestino = document.querySelector(destinoId);
             
             if (seccaoDestino) {
-                const posicaoExata = seccaoDestino.getBoundingClientRect().top + window.scrollY - 100;
+                const posicaoExata = seccaoDestino.getBoundingClientRect().top + window.scrollY - (document.querySelector('.navbar').offsetHeight + 20);
                 
                 window.scrollTo({
                     top: posicaoExata,

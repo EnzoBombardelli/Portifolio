@@ -1,182 +1,127 @@
-/*Holofote nos Projetos*/
-.nav-container {
-    position: relative;
-    width: 460px; 
-    height: 100%; 
-    background-color: transparent; 
-    border-radius: 0; 
-    border: none;
-    box-shadow: none; 
-    display: flex;
-    overflow: hidden;
-    --active-index: 2; 
-}
+.nav-container { --active-index: 2; }
 
 /*Apresentação*/
 .GridApresentacao {
-    margin: 2rem 2.5% 1rem 2.5%;
+    width: 90%;
+    max-width: var(--largura-max);
+    margin: 1.5rem auto 1rem;
     display: grid;
-    grid-template-columns: 0.8fr 0.2fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "Titulo Logo"
-    "Apresentacao Logo";
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    grid-template-areas: "Titulo" "Apresentacao" "Logo";
 }
 
 .Titulo { grid-area: Titulo; }
 .Apresentacao { grid-area: Apresentacao; }
 .Logo { grid-area: Logo; }
 
-.LogoLondrinense {
-    width: 100%;
-    height: 85%;
+.LogoLondrinense { 
+    display: block; 
+    width: 50%; 
+    max-width: 160px; 
+    height: auto; 
+    margin: 0 auto 1rem; 
 }
 
 h1 {
     color: white;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: normal;
-    font-size: 4.25rem;
-    line-height: 1;
-    margin-top: 3.125rem;
-    margin-left: 3.125rem;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: clamp(1.6rem, 8vw, 2.25rem);
+    line-height: 1.1;
+    margin: 1rem 0 0;
 }
 
-.londrinensetech {
-    color: white;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin: 1.25rem 3.125rem 3.125rem 3.125rem;
-    padding: 0;
-    box-sizing: border-box;
+.londrinensetech { 
+    color: white; 
+    font-weight: 400; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin: 1rem 0 1.5rem; 
 }
 
-/*Botões*/
-.container {
-    display: block;
-    max-width: 100%;
-    margin: 40px 10rem 0 10rem;
-    padding: 0 20px;
+/*Lista de aulas*/
+.container { 
+    width: 90%; 
+    max-width: var(--largura-max); 
+    margin: 1.5rem auto 0; 
 }
 
-.grid-tasks {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 20px;
+.grid-tasks { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+    margin-top: 1rem; 
 }
 
-.card {
-    background-color: rgb(70, 70, 70);
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 12px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-    height: 100%;
+.card h3 { 
+    font-size: 1.15rem; 
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: rgb(160, 160, 160);
+.card p { 
+    font-size: 0.95rem; 
+    margin-bottom: 1.25rem; 
+    color: rgb(175, 175, 175); 
 }
 
-.tipo {
-    font-size: 0.75rem;
-    color: rgb(175, 175, 175);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: block;
+/*640px*/
+@media (min-width: 640px) {
+    .grid-tasks { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem; 
+    }
+
+    h1 { 
+        font-size: 2.5rem; 
+    }
 }
 
-.card h3 {
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    line-height: 1;
+/*768px*/
+@media (min-width: 768px) {
+    .GridApresentacao {
+        grid-template-columns: 0.8fr 0.2fr;
+        grid-template-areas: "Titulo Logo" "Apresentacao Logo";
+        gap: 0 1.5rem;
+    }
+
+    .LogoLondrinense { 
+        width: 100%; 
+        max-width: none; 
+        margin: 0; 
+    }
+
+    h1 { 
+        font-size: 
+        3rem; margin: 
+        3rem 0 0 1.5rem; 
+    }
+
+    .londrinensetech { 
+        font-size: 1.1rem; 
+        margin: 1.25rem 1.5rem 3rem; 
+    }
 }
 
-.card p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    flex-grow: 1;
-    color: rgb(175, 175, 175);
+/*1024px*/
+@media (min-width: 1024px) {
+    h1 { 
+        font-size: 3.75rem; 
+        margin-left: 3.125rem; 
+    }
+
+    .londrinensetech { 
+        font-size: 1.25rem; 
+        margin: 1.25rem 3.125rem 3.125rem; 
+    }
+
+    .grid-tasks { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem; 
+    }
 }
 
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgb(50, 50, 50);
-    padding-top: 15px;
-}
-
-.card-turma {
-    font-size: 0.8rem;
-    color: rgb(190, 190, 190);
-}
-
-.botao-ver {
-    background-color: rgb(90, 90, 90);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: inline-block;
-    transition: background 0.3s ease;
-}
-
-.card:hover .botao-ver {
-    background-color: rgb(60, 60, 60);
-}
-
-/*Footer*/
-footer a {
-    color: white;
-    padding: 0.125rem;
-    text-decoration: none;
-}
-
-#rodape-container {
-    align-items: center;
-    display: flex;
-    gap: 1.25rem;
-    justify-content: space-between;
-    margin-top: 0.625rem;
-    flex: 1;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-}
-
-.icones-sociais, .copyright {
-    display: flex;
-    gap: 0.3125rem;
-    color: white;
-    font-weight: 400;
-    padding: 0.625rem 1.25rem;
+/*1280px+*/
+@media (min-width: 1280px) {
+    h1 { 
+        font-size: 4.25rem; 
+    }
 }
